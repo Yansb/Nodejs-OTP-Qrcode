@@ -6,7 +6,7 @@ const { Token } = require('../models')
 
 const signOptions = {
   algorithm: 'RS256',
-  expiresIn: '15m',
+  expiresIn: '60m',
 }
 
 const sign = payload => jwt.sign(payload, config.jwt.privateKey, signOptions)
